@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../jquery-ui-css/ui-lightness/jquery-ui-1.8.23.custom.css" type="text/css"/>
+    <title>jquery ui selectable</title>
+    <script src="../../jquery/jquery-1.8.0.js"></script>
+    <script src="../../jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+
+    <link rel="stylesheet" href="../iCombobox.css" type="text/css"/>
+    <script src="../iCombobox.js"></script>
+<style>
+    #iComboLanguage
+    {
+        border: 1px solid red;
+        width: 500px;
+    }
+    
+</style>
+<script type="text/javascript">
+$(function() 
+{
+    $( "#iComboLanguage" ).icombobox({
+                                        arrValues: ["ActionScript","AppleScript","Asp","BASIC","C","C++","Clojure","COBOL","ColdFusion","Erlang","Fortran","Groovy","Haskell","Java","JavaScript","Lisp","Perl","PHP","Python","Ruby","Scala","Scheme"]
+                                      , replace: false
+                                     });
+    $( "#iComboDog" ).icombobox({
+                                  arrValues: ["Белый гриб", "Вешенка обыкновенная", "Гриб-зонтик пёстрый", "Ежовик жёлтый", "Зеленушка", "Колпак кольчатый", "Лангерманния гигантская", "Лисичка обыкновенная", "Маслёнок обыкновенный", "Навозник белый", "Опёнок луговой", "Подберёзовик", "Подосиновик", "Полёвка цилиндрическая", "Рыжик настоящий", "Сыроежка зеленоватая", "Сыроежка сине-жёлтая", "Трутовик серно-жёлтый", "Шампиньон", "Трюфель", "Цезарский гриб", "Сморчок обыкновенный", "сморчок конический"]
+                                });
+});
+</script>
+</head>
+<body>
+<div id="iComboLanguage" class="ui-widget"></div>
+<p>Некоторый текст</p>
+<div id="iComboDog"></div>
+<div style="width:500px;
+           "
+    >
+    <a class="ui-ibutton ui-widget ui-state-default ui-button-icon-only ui-corner-right ui-icombobox-toggle" tabindex="-1" title="Show unique items in this column" role="button" aria-disabled="false"
+       style="float: right; width:50px;"
+       >
+        <span class="ui-button-icon-primary ui-icon ui-icon-close"></span>
+        <span class="ui-button-text"></span>
+    </a>
+    <a class="ui-ibutton ui-widget ui-state-default ui-button-icon-only ui-corner-right ui-icombobox-toggle" tabindex="-1" title="Show unique items in this column" role="button" aria-disabled="false"
+       style="float: right;width:50px;"
+    >
+        <span class="ui-button-icon-primary ui-icon ui-icon-triangle-1-s"></span>
+        <span class="ui-button-text"></span>
+    </a>
+    <div style="margin-right: 110px;padding-right:5px;
+               ">
+        <!-- -->
+        <input type="text" style="
+                                  width: 100%;
+                                 "/>
+        <!-- -->
+    </div>
+</div>
+</body>
+</html>
